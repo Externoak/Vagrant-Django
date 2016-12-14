@@ -5,9 +5,11 @@
 - name: git
   apt: name=git state=present
 
-
 - name: python-dev
   apt: name=python3-dev state=present
+
+- name: libpq-dev
+  apt: name=libpq-dev state=present
 
 
 - name: download pip
@@ -34,8 +36,6 @@
 - name: Preparing our Virtual Environment
   command: virtualenv django_cms
 
-#- name: Activating Virtual Environment
-#  command:  django_cms/bin/active
 
 
 
