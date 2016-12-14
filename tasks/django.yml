@@ -6,14 +6,8 @@
   apt: name=git state=present
 
 
-#- name: python-dev
-#  apt: name=python3-dev state=present
-
-#- name: libjpeg-dev
-#  apt: name=libjpeg-dev state=present
-
-#- name: libpng-dev
-#  apt: name=libpng-dev state=present
+- name: python-dev
+  apt: name=python3-dev state=present
 
 
 - name: download pip
