@@ -1,5 +1,5 @@
 # Vagrant-Django
-Vagrant + Django (Can be buggy)
+Vagrant + Django (No known Issues)
 
 To use:
 
