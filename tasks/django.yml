@@ -6,6 +6,9 @@
   apt: name=git state=present
 
 - name: python-dev
+  apt: name=python-dev state=present
+
+- name: python3-dev
   apt: name=python3-dev state=present
 
 - name: libpq-dev
