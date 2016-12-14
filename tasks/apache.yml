@@ -5,5 +5,5 @@
 - name: enabled mod_rewrite
   apache2_module: name=rewrite state=present
 
-  notify:
-     -name: reiniciando apache
+notify:
+   -name: reload apache
