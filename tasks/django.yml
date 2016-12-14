@@ -1,0 +1,47 @@
+
+- name: build-essential
+  apt: name=build-essential state=present
+
+- name: git
+  apt: name=git state=present
+
+#- name: libpq-dev
+#  apt: name=libpq-dev state=present
+
+#- name: python-dev
+#  apt: name=python3-dev state=present
+
+#- name: libjpeg-dev
+#  apt: name=libjpeg-dev state=present
+
+#- name: libpng-dev
+#  apt: name=libpng-dev state=present
+
+
+- name: download pip
+  get_url:
+    url: https://bootstrap.pypa.io/get-pip.py
+    dest: /home/vagrant
+    mode: 0444
+
+- name: Install pip
+  command: python get-pip.py
+
+- name: Install Virtualenv
+  command: pip install virtualenv
+
+- name: Preparing our Virtual Environment
+  command: virtualenv django_cms
+
+- copy:
+    src: scripts/virtual.sh
+    dest: /home/vagrant
+    owner: vagrant
+    group: vagrant
+    mode: 0644 
+
+- name: Activating Virtual Environment
+  shell: virtual.sh
+
+
+

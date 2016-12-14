@@ -1,0 +1,15 @@
+---
+- name: Instalando mysql
+  apt: name=mysql-server state=present
+- name: instalando modulo python mysql
+  apt: name=python-mysqldb state=present
+- name: Añadir usuario a la base de datos
+  mysql_user: name=vagrant
+              host=localhost
+              password=1234
+              priv=*.*:ALL,GRANT
+              login_user=root
+              login_password=
+
+  notify:
+        - reiniciando mysql

@@ -1,0 +1,18 @@
+---
+- hosts: all
+  
+  sudo: true
+  tasks:
+    
+    - name: Actualizando la cache de apt
+      apt: update_cache=yes
+    - include: apache.yml
+    - include: mysql.yml
+    - include: php.yml
+    - include: django.yml
+  handlers:
+    - name: reiniciando mysql
+      service: name=mysql state=restarted
+
+    - name: reload apache
+      service: name=apache2 state=reloaded
