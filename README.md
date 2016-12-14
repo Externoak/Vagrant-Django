@@ -11,7 +11,7 @@ Vagrant up
 
 Vagrant ssh
 
-cd django-cms
+cd django_cms
 
 source bin/activate
 
