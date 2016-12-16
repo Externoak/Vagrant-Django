@@ -2,6 +2,7 @@
 Vagrant + Django (No known issues)
 
 This machine contains: MySQL, Apache, PHP, Python, Django-cms and Nodejs
+
 How to setup:
 
     git clone https://github.com/Externoak/Vagrant-Django.git
