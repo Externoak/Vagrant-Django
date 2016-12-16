@@ -21,5 +21,13 @@ W/O Quotes.
     django-admin.py startproject “Name of your Project”
 
     cd “Name of your Project”
+    
+    sudo python manage.py migrate
+    
+    sudo python manage.py runserver “IP:PORT”
 
-    python manage.py runserver “IP:PORT”
+Allowhost error:
+    If your'e getting Allowhost error you must modify the following.
+          
+           sudo nano “Name of your Project”/settings.py
+                Modify ALLOWED_HOSTS = ['"Your IP"']
