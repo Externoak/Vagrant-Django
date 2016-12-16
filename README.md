@@ -1,22 +1,24 @@
 # Vagrant-Django
-Vagrant + Django (Can be buggy)
+Vagrant + Django (No known issues)
 
-To use:
+How to setup:
 
-git clone https://github.com/Externoak/Vagrant-Django.git
+    git clone https://github.com/Externoak/Vagrant-Django.git
 
-cd Vagrant-Django
+    cd Vagrant-Django
 
-Vagrant up
+    Vagrant up
 
-Vagrant ssh
+    Vagrant ssh
 
-cd django-cms
+    cd django-cms
 
-source bin/activate
+    source bin/activate
 
-django-admin.py startproject “Name of your Project”
+W/O Quotes.
 
-cd “Name of your Project”
+    django-admin.py startproject “Name of your Project”
 
-python manage.py runserver “IP:PORT”
+    cd “Name of your Project”
+
+    python manage.py runserver “IP:PORT”
