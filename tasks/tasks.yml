@@ -7,13 +7,14 @@
     - name: Actualizando la cache de apt
       apt: update_cache=yes
  
-    - name: upgrade apt packages
+    - name: upgrade apt packages (Can take a while)
       apt: upgrade=yes
  
     - include: apache.yml
     - include: mysql.yml
     - include: php.yml
     - include: django.yml
+    - include: node.yml
   handlers:
     - name: reiniciando mysql
       service: name=mysql state=restarted
