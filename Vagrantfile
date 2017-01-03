@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "Django" do |config|
     config.vm.box = "debianwheezy"
     config.vm.hostname = "Django"
-    config.vm.box_url = "https://dl.dropboxusercontent.com/u/4775364/vagrant/debian-6.0.9-amd64-plain-virtualbox.box"
+    config.vm.box_url = "https://github.com/jose-lpa/packer-debian_7.6.0/releases/download/1.0/packer_virtualbox-iso_virtualbox.box"
 
     config.vm.network :"public_network"
     config.vm.synced_folder "tasks/scripts", "/home/vagrant/scripts"
