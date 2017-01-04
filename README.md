@@ -9,21 +9,21 @@ How to setup:
 
     cd Vagrant-Django
 
-    Vagrant up
+    vagrant up
 
-    Vagrant ssh
+It will automatically have a working server on IP assigned to the server on port :8000
 
-    cd django-cms
+If you want to create your own projecto follow these steps:
 
-    source bin/activate
+    vagrant ssh
+
+    cd django_cms
 
 W/O Quotes.
 
     django-admin.py startproject “Name of your Project”
 
     cd “Name of your Project”
-    
-    sudo python manage.py migrate
     
     sudo python manage.py runserver “IP:PORT”
 
