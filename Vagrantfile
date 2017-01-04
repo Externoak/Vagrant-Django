@@ -6,6 +6,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.network :"public_network"
     config.vm.synced_folder "tasks/scripts", "/home/vagrant/scripts"
+    config.vm.synced_folder "testserver", "/home/vagrant/testserver"
      
     config.vm.provision :ansible do |ansible|
     ansible.playbook = "tasks/tasks.yml"
