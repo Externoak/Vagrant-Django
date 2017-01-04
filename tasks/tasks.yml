@@ -15,6 +15,7 @@
     - include: php.yml
     - include: django.yml
     - include: node.yml
+    - include: run.yml
   handlers:
     - name: reiniciando mysql
       service: name=mysql state=restarted

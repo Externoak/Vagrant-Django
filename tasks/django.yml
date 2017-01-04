@@ -33,12 +33,9 @@
 - name: Install Psycopg2
   command: pip install psycopg2
 
+- name: Install Speedtest
+  command: pip install speedtest-cli
+
 - name: Install Django-cms
   command: pip install django-cms
-
-- name: Preparing our Virtual Environment
-  command: virtualenv django_cms
-
-
-
 

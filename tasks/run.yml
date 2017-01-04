@@ -1,0 +1,28 @@
+- name: Preparing our Virtual Environment
+  command: virtualenv django_cms
+
+- name: source bashrc
+  sudo: no
+  shell: . django_cms/bin/activate
+
+- name: Creating Project
+  command: django-admin.py startproject PythonScripts
+  args:
+     chdir: django_cms/
+
+- name: Get the host IP
+  shell: host {{ ansible_fqdn }}
+  register: host_ip
+
+- name: Initializing Web Server
+  command: python manage.py migrate
+  args:
+     chdir: django_cms/PythonScripts
+
+
+- name: Starting on Port 8000
+  command: nohup python manage.py runserver {{ ansible_eth1.ipv4.address }}:8000 
+  async: 45
+  poll: 0 
+  args:
+     chdir: django_cms/PythonScripts
