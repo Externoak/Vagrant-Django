@@ -5,8 +5,8 @@ This machine contains: MySQL, Apache, PHP, Python, Django-cms and Nodejs
 
 How to setup:
 
-    git clone https://github.com/Externoak/Vagrant-Django.git
-
+    git clone https://github.com/Externoak/Vagrant-Django-CMS.git
+    
     cd Vagrant-Django
 
     vagrant up
