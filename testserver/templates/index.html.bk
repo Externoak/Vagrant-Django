@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+<h1>Página de Scripts para SYSADMIN en Python</h1>
+
+<h2>Scripts: </h2>
+
+    
+<form action="/main">
+    <input type="submit" value="Main Script" />
+</form>
+    
+    
+<form action="/dependencies">
+    <input type="submit" value="Dependencies" />
+</form>
+    
+<form action="/nmap">
+    <input type="submit" value="NMap" />
+</form>
+
+<form action="/speedtest">
+    <input type="submit" value="SpeedTest" />
+</form>
+    
+<form action="/pingcheck">
+    <input type="submit" value="PingCheck" />
+</form>
+    
+<form action="/webstatus">
+    <input type="submit" value="WebStatus" />
+</form>
+</body>
+    
+</html>

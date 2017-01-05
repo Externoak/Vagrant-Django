@@ -1,3 +1,4 @@
+<pre>
 #!/usr/bin/env python
 import sys
 import httplib
@@ -22,3 +23,4 @@ for site_name in [site]:
       
     except Exception as e:
         print "No response from server " + site_name
+</pre>

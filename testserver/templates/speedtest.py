@@ -1,3 +1,4 @@
+<pre>
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -416,3 +417,5 @@ LOG = logging.getLogger(__program__)
 
 if __name__ == '__main__':
     main()
+
+</pre>

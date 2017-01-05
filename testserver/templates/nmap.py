@@ -1,3 +1,4 @@
+<pre>
  #!/usr/bin/env python
 import nmap                         # import nmap.py module
 nm = nmap.PortScanner()             # instantiate nmap.PortScanner object
@@ -50,3 +51,5 @@ for host, status in hosts_list:
     print('{0}:{1}'.format(host, status))
 
 print ('-----------------------Finished NMAP-------------------------------')
+
+</pre>

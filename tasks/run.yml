@@ -18,6 +18,12 @@
 - name: Copying test server
   command: cp -R testserver/ django_cms/
 
+- replace:
+    dest=django_cms/testserver/prueba/settings.py
+    regexp='192.168.8.130'
+    replace='{{ ansible_eth1.ipv4.address }}'
+    backup=yes
+
 - name: Starting on Port 8000
   command: nohup python manage.py runserver {{ ansible_eth1.ipv4.address }}:8000 
   async: 10000

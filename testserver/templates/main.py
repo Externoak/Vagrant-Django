@@ -1,3 +1,4 @@
+<pre>
 import os
 import sys
 ans=True
@@ -49,3 +50,5 @@ SYSADMIN Usefull scripts in python
 
     elif ans !="":
       print("\n Not Valid Choice Try again") 
+
+</pre>

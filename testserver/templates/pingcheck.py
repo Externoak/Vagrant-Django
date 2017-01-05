@@ -1,3 +1,4 @@
+<pre>
 import subprocess
 import os
 
@@ -13,3 +14,4 @@ with open(os.devnull, "wb") as limbo:
                        print ipfinal, "inactive"
                else:
                        print ipfinal, "active"
+</pre>
