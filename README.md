@@ -13,7 +13,7 @@ How to setup:
 
 It will automatically have a working server on IP assigned to the server on port :8000
 
-If you want to create your own projecto follow these steps:
+If you want to create your own project follow these steps:
 
     vagrant ssh
 
