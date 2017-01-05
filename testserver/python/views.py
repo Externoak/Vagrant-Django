@@ -23,3 +23,6 @@ def webstatus(request) :
 
 def dependencies(request) :
     return render(request, 'dependencies.py')
+
+def interfaces(request) :
+    return render(request, 'interfaces.py')
