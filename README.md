@@ -7,7 +7,7 @@ How to setup:
 
     git clone https://github.com/Externoak/Vagrant-Django-CMS.git
     
-    cd Vagrant-Django
+    cd Vagrant-Django-CMS
 
     vagrant up
 
