@@ -1,7 +1,7 @@
 # Vagrant-Django
 Vagrant + Django (No known issues)
 
-This machine contains: MySQL, Apache, PHP, Python, Django-cms and Nodejs
+This machine contains: MySQL, Apache, PHP, Python, Django and Nodejs.
 
 How to setup:
 
