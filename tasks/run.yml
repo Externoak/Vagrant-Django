@@ -25,7 +25,7 @@
     backup=yes
 
 - name: Starting on Port 8000
-  command: nohup python manage.py runserver {{ ansible_eth1.ipv4.address }}:8000 
+  command: nohup python manage.py runserver --insecure {{ ansible_eth1.ipv4.address }}:8000 
   async: 10000
   poll: 0 
   args:
