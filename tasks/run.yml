@@ -19,8 +19,8 @@
   command: cp -R testserver/ django_cms/
 
 - replace:
-    dest=django_cms/testserver/prueba/settings.py
-    regexp='192.168.8.221'
+    dest=django_cms/testserver/PythonScripts/settings.py
+    regexp='192.168.8.102'
     replace='{{ ansible_eth1.ipv4.address }}'
     backup=yes
 

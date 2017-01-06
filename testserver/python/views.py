@@ -32,8 +32,9 @@ def interfaces(request) :
 
 def download(request) :
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    path_to_file = os.path.join(BASE_DIR, 'download/Python-Scripts-SYSAdmin.zip')
+    path_to_file = os.path.join(BASE_DIR, 'python/download/Python-Scripts-SYSAdmin.zip')
     zip_file = open(path_to_file, 'r')
     response = HttpResponse(zip_file, content_type='application/force-download')
     response['Content-Disposition'] = 'attachment; filename="%s"' % 'Python-Scripts-SYSAdmin.zip'
     return response
+

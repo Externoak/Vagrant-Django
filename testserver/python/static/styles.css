@@ -1,21 +1,31 @@
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 80%;
+	font-size: 100%;
 	font-weight: bold;
-	background: #FFF;
+	background: green;
+    color: ;
 	}
 
 h1 {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-family:Courier;
+	font-size:40px;
 	font-weight:bold;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
+    background: aqua;
 	}
 
+h2 {
+    margin: 15px;
+    color: aliceblue;
+}
+
+h3 {
+    color: aliceblue;
+}
 hr {
 	border:none;
-	border-top:1px solid #CCCCCC;
+	border-top: 4px solid ;
 	height:1px;
 	margin-bottom:25px;
 	}
@@ -32,7 +42,7 @@ img {
 	
 #menu {
 	width: 200px;
-	margin: 10px;
+	margin: 20px;
 	}
 	
 #menu li a {
@@ -40,7 +50,7 @@ img {
   	voice-family: "\"}\""; 
   	voice-family: inherit;
   	height: 24px;
-	text-decoration: none;
+	text-decoration: underline;
 	}	
 	
 #menu li a:link, #menu li a:visited {

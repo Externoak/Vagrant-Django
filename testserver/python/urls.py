@@ -13,3 +13,4 @@ urlpatterns = [
     url(r'^pingcheck/$', views.pingcheck, name='pingcheck'),
     url(r'^webstatus/$', views.webstatus, name='webstatus'),
 ]
+
