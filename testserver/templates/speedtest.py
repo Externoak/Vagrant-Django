@@ -1,6 +1,7 @@
 <pre>
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# Original maker https://github.com/fopina/pyspeedtest all credits go to him. I have just added it to a pack.
 
 from __future__ import print_function
 
