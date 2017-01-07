@@ -11,7 +11,14 @@ How to setup:
 
     vagrant up
 
-It will automatically have a working server on IP assigned to the server on port :8000
+
+#### Once vagrant has finish everything should be working perfectly.
+
+This machine will automatically have a working server on IP assigned to the machine on port :8000
+
+
+
+### Start your own project.
 
 If you want to create your own project follow these steps:
 
