@@ -18,7 +18,7 @@ This machine will automatically have a working server on IP assigned to the mach
 
 
 
-### Start your own project.
+# Start your own project in Django.
 
 If you want to create your own project follow these steps:
 
